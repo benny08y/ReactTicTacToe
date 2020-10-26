@@ -131,8 +131,8 @@ class Game extends React.Component {
                 'Go to move #' + step.moves + ' ' + getCoordinate(step.coordinate):
                 'Go to game start (column, row)';
             return (
-                <li key={step.moves}>
-                    <button onClick={ () => this.jumpTo(step.moves)}>                        
+                <li key={moves}>
+                    <button onClick={ () => this.jumpTo(moves)}>                        
                         {step.active ? <b>{desc}</b> : desc}
                     </button>
                 </li>
